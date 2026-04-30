@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeoAI Web | Artificial Intelligence untuk Geospasial</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-earth-asia"></i>
+      <span>GeoAI Web</span>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#konsep">Konsep</a>
+      <a href="#aplikasi">Aplikasi</a>
+      <a href="#arsitektur">Arsitektur</a>
+      <a href="#demo">Demo</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="badge">Artificial Intelligence untuk Geospasial</span>
+
+      <h1>GeoAI: Integrasi AI, Data Spasial, Drone, LiDAR, dan WebGIS</h1>
+
+      <p>
+        GeoAI adalah penerapan Artificial Intelligence untuk memahami,
+        menganalisis, dan memodelkan fenomena permukaan bumi menggunakan
+        data geospasial seperti citra satelit, drone, LiDAR, point cloud,
+        peta digital, dan sensor IoT.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#konsep" class="btn-primary">Mulai Belajar</a>
+        <a href="#demo" class="btn-secondary">Lihat Demo</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <i class="fa-solid fa-brain"></i>
+      <h3>GeoAI Workflow</h3>
+      <ul>
+        <li>Data Acquisition</li>
+        <li>Pre-processing</li>
+        <li>AI Model Training</li>
+        <li>Spatial Prediction</li>
+        <li>WebGIS Visualization</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="konsep" class="section">
+    <h2>Konsep Dasar GeoAI</h2>
+    <p class="section-desc">
+      GeoAI menggabungkan kecerdasan buatan dengan ilmu geospasial untuk
+      mendeteksi pola spasial, mengklasifikasi objek, memprediksi perubahan,
+      dan membangun sistem pendukung keputusan berbasis lokasi.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <i class="fa-solid fa-satellite"></i>
+        <h3>Remote Sensing</h3>
+        <p>
+          AI digunakan untuk klasifikasi tutupan lahan, deteksi bangunan,
+          deteksi vegetasi, perubahan garis pantai, dan analisis kawasan.
+        </p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-helicopter"></i>
+        <h3>Drone Mapping</h3>
+        <p>
+          Data foto udara dari drone dapat diproses dengan AI untuk
+          segmentasi objek, pemetaan atap, jalan, vegetasi, dan volume.
+        </p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-cube"></i>
+        <h3>LiDAR & Point Cloud</h3>
+        <p>
+          AI dapat mengklasifikasi point cloud menjadi bangunan, tanah,
+          pohon, jalan, tiang, dan objek lainnya.
+        </p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-city"></i>
+        <h3>Digital Twin</h3>
+        <p>
+          GeoAI mendukung pembangunan kota cerdas, monitoring aset,
+          simulasi lingkungan, dan pengambilan keputusan berbasis data.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="aplikasi" class="section dark">
+    <h2>Aplikasi GeoAI</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>1. Deteksi Bangunan Otomatis</h3>
+        <p>
+          AI dapat mendeteksi footprint bangunan dari citra satelit atau
+          orthophoto drone menggunakan model computer vision.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2. Klasifikasi Tutupan Lahan</h3>
+        <p>
+          Model machine learning seperti Random Forest, SVM, CNN, atau
+          Deep Learning dapat digunakan untuk membedakan area vegetasi,
+          permukiman, badan air, jalan, dan lahan terbuka.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>3. Analisis Volume Cut and Fill</h3>
+        <p>
+          Data point cloud atau mesh dari drone dapat dianalisis untuk
+          menghitung volume galian dan timbunan secara otomatis.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>4. Smart City dan 3D City Model</h3>
+        <p>
+          GeoAI dapat digunakan untuk membangun model kota 3D, mendeteksi
+          perubahan bangunan, dan mendukung sistem digital twin.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="arsitektur" class="section">
+    <h2>Arsitektur Sistem GeoAI Berbasis Web</h2>
+
+    <div class="architecture">
+      <div class="arch-box">Input Data<br><span>Drone, LiDAR, Satellite, GPS</span></div>
+      <div class="arrow">→</div>
+      <div class="arch-box">AI Processing<br><span>ML, CNN, Segmentation</span></div>
+      <div class="arrow">→</div>
+      <div class="arch-box">Spatial Database<br><span>PostGIS / GeoJSON</span></div>
+      <div class="arrow">→</div>
+      <div class="arch-box">WebGIS<br><span>Leaflet, Cesium, Mapbox</span></div>
+    </div>
+  </section>
+
+  <section id="demo" class="section demo">
+    <h2>Demo Interaktif GeoAI</h2>
+    <p>
+      Simulasi sederhana ini menunjukkan bagaimana AI dapat mengklasifikasi
+      data geospasial berdasarkan jenis objek.
+    </p>
+
+    <div class="demo-box">
+      <select id="geoInput">
+        <option value="">Pilih data geospasial</option>
+        <option value="bangunan">Citra Drone Area Permukiman</option>
+        <option value="vegetasi">Citra Satelit Area Vegetasi</option>
+        <option value="pointcloud">Point Cloud LiDAR</option>
+        <option value="volume">Mesh Tambang / Konstruksi</option>
+      </select>
+
+      <button onclick="runGeoAI()">Analisis dengan AI</button>
+
+      <div id="result" class="result"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 GeoAI Web | Artificial Intelligence untuk Geospasial
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
